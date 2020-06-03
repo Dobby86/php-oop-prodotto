@@ -14,7 +14,11 @@
 
       class Amazon {
 
-          public $articoli;
+          public $marca;
+          public $quantita;
+          public $tessuto;
+
+
 
           public function printMe() {
 
@@ -25,9 +29,8 @@
               echo "I prodotti nell altro magazzino sono : "   .  $this -> marca .   " in tessuto di "  .  $this -> tessuto . "<br>";
           }
 
+
       }
-
-
 
 
       $giocattoli = new Amazon();
@@ -39,6 +42,7 @@
       $scarpe -> marca = "Nike";
            $scarpe -> tessuto = "pelle";
        $scarpe -> printMeDue();
+
 
 
 
