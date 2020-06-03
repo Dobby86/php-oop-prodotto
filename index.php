@@ -16,14 +16,30 @@
 
           public $articoli;
 
+          public function printMe() {
+
+              echo "I prodotti nel magazzino sono : "   .  $this -> marca .   " in quantita  come "  .  $this -> quantita . "<br>";
+          }
+          public function printMeDue() {
+
+              echo "I prodotti nell altro magazzino sono : "   .  $this -> marca .   " in tessuto di "  .  $this -> tessuto . "<br>";
+          }
+
       }
+
+
+
+
       $giocattoli = new Amazon();
       $giocattoli -> marca = "Giochi preziosi";
       $giocattoli -> quantita = "n *9999" ;
+      $giocattoli -> printMe();
 
       $scarpe = new Amazon();
       $scarpe -> marca = "Nike";
-       $scarpe -> tessuto = "di pelle";
+           $scarpe -> tessuto = "pelle";
+       $scarpe -> printMeDue();
+
 
 
 
